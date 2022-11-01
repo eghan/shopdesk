@@ -17,7 +17,9 @@
   "dependencies": {
     "@mdx-js/react": "^2.1.5",
     "babel-plugin-styled-components": "^2.0.7",
+    "dotenv": "^16.0.3",
     "gatsby": "^4.24.4",
+    "gatsby-image": "^3.11.0",
     "gatsby-plugin-google-analytics": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",
     "gatsby-plugin-manifest": "^4.24.0",
@@ -25,10 +27,13 @@
     "gatsby-plugin-sharp": "^4.24.0",
     "gatsby-plugin-sitemap": "^5.24.0",
     "gatsby-plugin-styled-components": "^5.24.0",
+    "gatsby-source-airtable": "^2.3.0",
     "gatsby-source-filesystem": "^4.24.0",
     "gatsby-transformer-sharp": "^4.24.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "styled-components": "^5.3.6"
+    "react-modal": "^3.16.1",
+    "styled-components": "^5.3.6",
+    "swiper": "^8.4.4"
   }
 }

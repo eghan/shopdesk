@@ -1,4 +1,6 @@
-import * as React from "react"
+// import * as React from "react"
+import React, { useState, useEffect } from "react"
+
 
 const pageStyles = {
   color: "#232129",
@@ -123,11 +125,26 @@ const links = [
   },
 ]
 
+
 const IndexPage = () => {
+
+  const [data, setData] = useState()
+
+  useEffect(async () => {
+    const result = await fetch(
+      `${process.env.AIRTABLE_API_KEY}`
+    ).then(res => res.json())
+
+    setData(result.data)
+  })
+
+  console.log('airtable', data)
+
+
   return (
     <main style={pageStyles}>
       <h1 style={headingStyles}>
-        Congratulations
+        {JSON.stringify(data)}
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site! 🎉🎉🎉</span>
       </h1>
